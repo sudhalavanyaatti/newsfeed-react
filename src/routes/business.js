@@ -36,50 +36,29 @@ class Business extends Component {
       
       });
   }
-  
   render() {
-    let sampleList = this.state.list;
     return (
-      <div>
+     <div>
         <div>
-          <Header />
-        </div>
-        <ul>
-          {this.state.list.map(function(item, index) {
-            if (index % 2 === 1) {
-              return (
-                <div key={index}>
-                
-                  <Row >
-                    <Col xs="6" md="6" sm="6">
-                      <Card body >
-                        <CardImg
-                          top
-                          width="100%"
-                          src={sampleList[index - 1].urlToImage}
-                          alt="Card image cap"
-                        />
-                        <CardBody>
-                        <CardText>
-                            <small align="left">
-                              {sampleList[index - 1].publishedAt}
-                            </small>
-                          </CardText>
-                          <CardTitle align="center">{sampleList[index - 1].title}</CardTitle>
-                          <CardText align="center">
-                            {sampleList[index - 1].description}
-                          </CardText>
-                         
-                          <CardText align="right">__{sampleList[index - 1].author}</CardText>
-                          <CardLink href={sampleList[index - 1].url}>
-                            MOre
-                          </CardLink>
-                         
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col xs="6" sm="6" md="6">
-                      <Card body>
+     <Header/>
+      </div>
+      <ul>
+        {this.state.list.map(function(item, index) {
+          return <ContentItem item={item} key={index} />
+        })}
+      </ul>
+     </div>
+    );
+  }
+
+}
+
+const ContentItem = ({ item }) => (
+ 
+  <Row className="ContentItem">
+    <Col xs="3" />
+    <Col xs="12" sm="6">
+    <Card body>
                         <CardImg top width="100%" src={item.urlToImage} />
                         <CardBody>
                         <CardText>
@@ -92,18 +71,8 @@ class Business extends Component {
                           
                         </CardBody>
                       </Card>
-                    </Col>
-                  </Row>
-                 
-                </div>
-              );
-            }
-          })}
-        </ul>
-      </div>
-    );
-  }
-}
-
+    </Col>
+  </Row>
+)
 
 export default Business;

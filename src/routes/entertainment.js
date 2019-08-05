@@ -50,7 +50,7 @@ class Entertainment extends Component {
               return (
                 <div key={index}>
                 
-                  <Row >
+                  <Row className="ContentItem">
                     <Col xs="6" md="6" sm="6">
                       <Card body >
                         <CardImg
