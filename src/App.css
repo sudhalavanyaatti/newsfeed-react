@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:whitesmoke;
 }
 
 .App-link {
@@ -24,7 +24,7 @@
 }
 
 .homebg{
- position: fixed;
+ background-color: silver;
 }
 @keyframes App-logo-spin {
   from {
@@ -36,7 +36,7 @@
 }
 
 .ContentItem {
-  margin-top: 10px;
+  margin-top: 30px;
 
 }
 .card-body {

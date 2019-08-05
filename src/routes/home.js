@@ -41,7 +41,7 @@ class Home extends Component {
   render() {
     let sampleList = this.state.list;
     return (
-      <div>
+      <div className="homebg">
         <div>
           <Header />
         </div>
