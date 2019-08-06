@@ -3,38 +3,57 @@ import {Link} from 'react-router-dom';
 import {Row, Col} from 'react-flexbox-grid';
 import {Container, Dropdown, Menu,Image} from 'semantic-ui-react';
 
+import '../styles.css';
 
-class Header2 extends Component {
+
+class Header extends Component {
   
   render() {
     return (
-      <div>
-        
-          <div>
-            <Menu id="headbg" fixed="top" inverted style={{ height: '50px'}}>
-              <Container>
-                <Row>
-                <col>
-                <Menu.Item as={Link} to="/" header style={{ left: '-100px',color: 'white'}}>
-               
-               Employee HUB
-             </Menu.Item>
-                </col>
-             
-              <col>
-              <Menu.Item as={Link} to="/signIn" style={{fontSize:'18px',color: 'white'}}>
-                 SignIn
-               </Menu.Item>
-          
-              </col>
-                </Row>
-              </Container>
-            </Menu>
-          </div>
-       
+      <div className="navbar">
+        <Row>
+          <Col xs={12} className="col">
+            <Row end="xs">
+              <Col xs={4} className="col">
+                    <div>
+                    <strong>
+                    <Container>
+                    <Dropdown text='File'>
+    <Dropdown.Menu>
+      <Dropdown.Item text='New' as ={Link} to="/business" />
+      <Dropdown.Item text='Open.' />
+    </Dropdown.Menu>
+  </Dropdown>
+                    </Container>
+                      </strong>
+                      <strong>
+                        {' '}
+                        <Link to="/business">Business</Link>
+                      </strong>
+                      <strong>
+                        {' '}
+                        <Link to="/sports">Sports</Link>
+                      </strong>
+                      <strong>
+                        {' '}
+                        <Link to="/entertainment">Entertainment</Link>
+                      </strong>
+                      <strong>
+                        {' '}
+                        <Link to="/science">Science</Link>
+                      </strong>
+                      <strong>
+                        {' '}
+                        <Link to="/health">Health</Link>
+                      </strong>
+                    </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </div>
     );
   }
 }
 
-export default Header2;
+export default Header;

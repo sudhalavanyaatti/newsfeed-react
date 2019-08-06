@@ -41,7 +41,7 @@ class Business extends Component {
     let sampleList = this.state.list;
     return (
       <div className="homebg">
-        <div>
+        <div >
           <Header />
         </div>
         <ul>

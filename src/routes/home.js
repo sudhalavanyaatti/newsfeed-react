@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/header";
 import "bootstrap/dist/css/bootstrap.css";
-import moment from 'moment'
+
 import {
   Row,
   Col,
@@ -42,7 +42,7 @@ class Home extends Component {
     let sampleList = this.state.list;
     return (
       <div className="homebg">
-        <div>
+        <div className="header">
           <Header />
         </div>
         <ul>

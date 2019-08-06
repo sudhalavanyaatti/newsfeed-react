@@ -23,9 +23,6 @@
   color: #61dafb;
 }
 
-.homebg{
- background-color: silver;
-}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -44,3 +41,9 @@
   padding: 1.25rem;
   height: 700px;
 }
+.header{
+  height:"200%"
+}
+.homebg{
+  background-color: silver;
+ }

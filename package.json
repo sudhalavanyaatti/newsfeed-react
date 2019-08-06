@@ -8,6 +8,7 @@
     "mdbreact": "^4.18.1",
     "moment": "^2.24.0",
     "react": "^16.8.6",
+    "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.8.6",
     "react-flexbox-grid": "^2.1.2",
     "react-fontawesome": "^1.6.1",
@@ -15,6 +16,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.1",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.87.3"
   },
   "scripts": {
