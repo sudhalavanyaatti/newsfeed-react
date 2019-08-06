@@ -6,7 +6,7 @@ import {
 import "../App.css";
 
 
-class Science extends Component {
+class InBusiness extends Component {
  
   constructor (props) {
     super (props);
@@ -17,7 +17,7 @@ class Science extends Component {
     };
   }
   componentDidMount() {
-    fetch('http://localhost:9003/science', {
+    fetch('http://localhost:9003/inter-business', {
       method: 'get',
       body: JSON.stringify(),
       headers: {
@@ -39,8 +39,8 @@ class Science extends Component {
   render() {
     let sampleList = this.state.list;
     return (
-      <div>
-        <div>
+      <div className="homebg">
+        <div >
           <Header />
         </div>
         <ul>
@@ -49,7 +49,7 @@ class Science extends Component {
               return (
                 <div key={index}>
                 
-                  <Row className="ContentItem">
+                  <Row  className="ContentItem" >
                     <Col xs="6" md="6" sm="6">
                       <Card body >
                         <CardImg
@@ -79,7 +79,7 @@ class Science extends Component {
                     </Col>
                     <Col xs="6" sm="6" md="6">
                       <Card body>
-                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap" />
+                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap"/>
                         <CardBody>
                         <CardText>
                             <small align="left">{item.publishedAt}</small>
@@ -105,4 +105,4 @@ class Science extends Component {
 }
 
 
-export default Science;
+export default InBusiness;

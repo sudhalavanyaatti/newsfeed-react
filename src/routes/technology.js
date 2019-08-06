@@ -1,46 +1,48 @@
-import React, {Component} from 'react';
-import Header from '../components/header';
+import React, { Component } from "react";
+import Header from "../components/header";
+import "bootstrap/dist/css/bootstrap.css";
+
 import {
-  Row, Col, Card, CardBody, CardTitle, CardText, CardImg,CardLink
-} from 'reactstrap';
+  Row,
+  Col,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardImg,
+  CardLink
+} from "reactstrap";
 import "../App.css";
 
-
-class Science extends Component {
- 
-  constructor (props) {
-    super (props);
+class Technology extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
-  
-      list:[]
-      
+      list: []
     };
   }
   componentDidMount() {
-    fetch('http://localhost:9003/science', {
-      method: 'get',
+    fetch("http://localhost:9003/technology", {
+      method: "get",
       body: JSON.stringify(),
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
-    })
-      .then (res => res.json ())
-      .then (response => {
-       console.log(response);
-       if (response) {
-        this.setState({list:response.articles});
-       
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       }
-      
+    })
+      .then(res => res.json())
+      .then(response => {
+        console.log(response);
+        if (response) {
+          this.setState({ list: response.articles });
+        }
       });
   }
-  
   render() {
     let sampleList = this.state.list;
     return (
-      <div>
-        <div>
+      <div className="homebg">
+        <div className="header">
           <Header />
         </div>
         <ul>
@@ -49,9 +51,9 @@ class Science extends Component {
               return (
                 <div key={index}>
                 
-                  <Row className="ContentItem">
+                  <Row className="ContentItem" >
                     <Col xs="6" md="6" sm="6">
-                      <Card body >
+                      <Card body  >
                         <CardImg
                           top
                           width="100%"
@@ -104,5 +106,4 @@ class Science extends Component {
   }
 }
 
-
-export default Science;
+export default Technology;

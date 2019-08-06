@@ -1,6 +1,6 @@
 import React from 'react';
 
-import 'mdbreact/dist/css/mdb.css';
+
 //import {Row, Col} from 'react-flexbox-grid';
 
 

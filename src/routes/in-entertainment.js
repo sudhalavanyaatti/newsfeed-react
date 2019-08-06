@@ -6,7 +6,7 @@ import {
 import "../App.css";
 
 
-class Science extends Component {
+class InEntertainment extends Component {
  
   constructor (props) {
     super (props);
@@ -17,7 +17,7 @@ class Science extends Component {
     };
   }
   componentDidMount() {
-    fetch('http://localhost:9003/science', {
+    fetch('http://localhost:9003/inter-entertainment', {
       method: 'get',
       body: JSON.stringify(),
       headers: {
@@ -79,7 +79,7 @@ class Science extends Component {
                     </Col>
                     <Col xs="6" sm="6" md="6">
                       <Card body>
-                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap" />
+                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap"/>
                         <CardBody>
                         <CardText>
                             <small align="left">{item.publishedAt}</small>
@@ -105,4 +105,4 @@ class Science extends Component {
 }
 
 
-export default Science;
+export default InEntertainment;

@@ -79,7 +79,7 @@ class Sports extends Component {
                     </Col>
                     <Col xs="6" sm="6" md="6">
                       <Card body>
-                        <CardImg top width="100%" src={item.urlToImage} />
+                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap" />
                         <CardBody>
                         <CardText>
                             <small align="left">{item.publishedAt}</small>

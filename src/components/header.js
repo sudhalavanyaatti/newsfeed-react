@@ -10,7 +10,9 @@ class Header2 extends Component {
   render() {
     return (
       <div >
-      
+           <div>
+             
+           </div>
           <div>
             <Menu id="headbg" inverted style={{ height: '50px'}} >
               <Container>
@@ -28,7 +30,7 @@ class Header2 extends Component {
                   
                   <Row>
                   <Col xs={4} className="col">
-                  <Menu.Item  as={Link} to="/home" id='dtext' style={{fontSize:'18px',color: 'smoky white'}}>
+                  <Menu.Item  as={Link} to="/" id='dtext' style={{fontSize:'18px',color: 'smoky white'}}>
                     Home
                   </Menu.Item>
                   </Col>
@@ -43,7 +45,7 @@ class Header2 extends Component {
                     id='dtext'
                   >
                     <Dropdown.Menu >
-                      <Dropdown.Item  as={Link} to="/inter-business" >
+                      <Dropdown.Item  as={Link} to="/in-business" >
                         Interenational
                       </Dropdown.Item>
                       <Dropdown.Item  as={Link} to="/business" >
@@ -64,7 +66,7 @@ class Header2 extends Component {
                     id='dtext'
                   >
                     <Dropdown.Menu >
-                      <Dropdown.Item  as={Link} to="/inter-sports" >
+                      <Dropdown.Item  as={Link} to="/in-sports" >
                         Interenational
                       </Dropdown.Item>
                       <Dropdown.Item  as={Link} to="/sports" >
@@ -85,7 +87,7 @@ class Header2 extends Component {
                     id='dtext'
                   >
                     <Dropdown.Menu >
-                      <Dropdown.Item  as={Link} to="/inter-enteratainment" >
+                      <Dropdown.Item  as={Link} to="/in-enteratainment" >
                         Interenational
                       </Dropdown.Item>
                       <Dropdown.Item  as={Link} to="/entertainment" >
@@ -106,10 +108,30 @@ class Header2 extends Component {
                     id='dtext'
                   >
                     <Dropdown.Menu >
-                      <Dropdown.Item  as={Link} to="/inter-science" >
+                      <Dropdown.Item  as={Link} to="/in-science" >
                         Interenational
                       </Dropdown.Item>
                       <Dropdown.Item  as={Link} to="/science" >
+                        National
+                      </Dropdown.Item>
+                     
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  </Col>
+                  <Col xs={4} className="col">
+                  <Dropdown
+                    
+                    item
+                    simple
+                    text="Technology"
+                    style={{color: 'smoky white'}}
+                    id='dtext'
+                  >
+                    <Dropdown.Menu >
+                      <Dropdown.Item  as={Link} to="/in-technology" >
+                        Interenational
+                      </Dropdown.Item>
+                      <Dropdown.Item  as={Link} to="/technology" >
                         National
                       </Dropdown.Item>
                      
@@ -127,7 +149,7 @@ class Header2 extends Component {
                     id='dtext'
                   >
                     <Dropdown.Menu >
-                      <Dropdown.Item  as={Link} to="/inter-health" >
+                      <Dropdown.Item  as={Link} to="/in-health" >
                         Interenational
                       </Dropdown.Item>
                       <Dropdown.Item  as={Link} to="/health" >

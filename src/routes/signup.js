@@ -9,7 +9,7 @@ import options from '../components/category';
 import '../App.css';
 import {MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn} from 'mdbreact';
 import 'font-awesome/css/font-awesome.min.css';
-import 'mdbreact/dist/css/mdb.css';
+
 
 
 
