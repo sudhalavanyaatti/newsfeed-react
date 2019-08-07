@@ -1,14 +1,13 @@
-
-#headbg{
-  background-color:black;
+#headbg {
+  background-color: whitesmoke;
+border: 10in;
 }
 
 #dtext {
   font-weight: bold;
 }
-.ui.dropdown>.dropdown.icon {
+.ui.dropdown > .dropdown.icon {
   position: relative;
- 
-  font-size: 0!important;
- 
+
+  font-size: 0 !important;
 }
