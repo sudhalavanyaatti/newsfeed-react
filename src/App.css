@@ -33,7 +33,7 @@
 }
 
 .ContentItem {
-  margin-top: 30px;
+  margin-top: 50px;
 
 }
 .card-body {
@@ -45,5 +45,5 @@
   height:"200%"
 }
 .homebg{
-  background-color: whitesmoke;
+  background-color: silver;
  }
