@@ -6,7 +6,7 @@ import {
 import "../App.css";
 
 
-class InBusiness extends Component {
+class Business2 extends Component {
  
   constructor (props) {
     super (props);
@@ -105,4 +105,4 @@ class InBusiness extends Component {
 }
 
 
-export default InBusiness;
+export default Business2;

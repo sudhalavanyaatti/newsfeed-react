@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 import "../App.css";
 
-class InTechnology extends Component {
+class  InTechnology extends Component {
   constructor(props) {
     super(props);
     this.state = {

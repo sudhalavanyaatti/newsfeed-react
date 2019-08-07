@@ -6,7 +6,7 @@ import {
 import "../App.css";
 
 
-class  InHealth extends Component {
+class Health2 extends Component {
  
   constructor (props) {
     super (props);
@@ -78,7 +78,7 @@ class  InHealth extends Component {
                     </Col>
                     <Col xs="6" sm="6" md="6">
                       <Card body>
-                        <CardImg top width="100%" src={item.urlToImage} alt="Card image cap" />
+                        <CardImg top width="100%" src={item.urlToImage}  alt="Card image cap"/>
                         <CardBody>
                         <CardText>
                             <small align="left">{item.publishedAt}</small>
@@ -104,4 +104,4 @@ class  InHealth extends Component {
 }
 
 
-export default InHealth;
+export default Health2;

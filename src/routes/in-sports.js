@@ -6,7 +6,7 @@ import {
 import "../App.css";
 
 
-class InSports extends Component {
+class Sports2 extends Component {
  
   constructor (props) {
     super (props);
@@ -104,4 +104,4 @@ class InSports extends Component {
 }
 
 
-export default InSports;
+export default Sports2;
