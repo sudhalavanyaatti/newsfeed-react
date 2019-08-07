@@ -50,7 +50,7 @@ class InScience extends Component {
     });
       
     return(
-       <div>
+       <div className="homebg">
          <Header/>
          <Container fluid>
         <Row  className="ContentItem">

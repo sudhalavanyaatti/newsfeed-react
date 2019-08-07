@@ -33,17 +33,24 @@
 }
 
 .ContentItem {
-  margin-top: 50px;
-
+  margin-top: 20px;
 }
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
-  height: 700px;
+  height: 290px;
+  width:"100%";
 }
 .header{
-  height:"200%"
+  height:"200%";
+  
 }
 .homebg{
-  background-color: silver;
+  background-color:whitesmoke;
  }
+ #dtext1 {
+  font-size:18px;
+}
+#dtext2 {
+  font-size:14px;
+}

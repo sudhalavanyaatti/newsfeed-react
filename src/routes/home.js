@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../components/header';
 import Cards from '../components/cards';
-import {
-  Row,
-  Col
-} from "reactstrap";
+import { Row,Col }  from "reactstrap";
 import "../App.css";
 import { Container } from 'semantic-ui-react';
 
@@ -41,8 +38,8 @@ class Home extends Component {
   render() {
     let Cardssm=this.state.list.map((item,index)=>{
      return(
-       
-       <Col xs="6" md="6" sm="6">
+
+      <Col xs="6" md="6" sm="6">
        <Cards item={item} />
        </Col>
      )
@@ -50,10 +47,10 @@ class Home extends Component {
     });
       
     return(
-       <div>
+       <div className="homebg">
          <Header/>
          <Container fluid>
-        <Row  className="ContentItem">
+        <Row  >
           {Cardssm}
         </Row>
       </Container>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import{
+  Row,
+  Col,
   Card,
   CardBody,
   CardTitle,
@@ -16,25 +18,30 @@ class Cards extends Component {
 
     render(){
         return (
-            <div>
-              <Card body>
-                        <CardImg
+              <Card body className="ContentItem">
+                       <Row>
+                       <Col md="4">
+                       <CardImg
                           top
                           width="100%"
+                          height="250px"
                           src={this.props.item.urlToImage}
                           alt="Card image cap"
                         />
+                       </Col>
+                        <Col md="8">
                         <CardBody>
                           <CardText>
                             <small align="left">{this.props.item.publishedAt}</small>
                           </CardText>
-                          <CardTitle align="center">{this.props.item.title}</CardTitle>
-                          <CardText align="center">{this.props.item.description}</CardText>
+                          <CardTitle id="dtext1"><strong>{this.props.item.title}</strong></CardTitle>
+                          <CardText  id="dtext2">{this.props.item.description}</CardText>
                           <CardText align="right">__{this.props.item.author}</CardText>
                           <CardLink href={this.props.item.url}>MOre</CardLink>
                         </CardBody>
+                        </Col>
+                       </Row>
                       </Card>
-            </div>
           );
     }
   };
