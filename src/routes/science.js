@@ -17,7 +17,7 @@ class Science extends Component {
     };
   }
   componentDidMount() {
-    fetch('http://localhost:9003/science', {
+    fetch('http://localhost:9003/inter-science', {
       method: 'get',
       body: JSON.stringify(),
       headers: {

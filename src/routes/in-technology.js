@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 import "../App.css";
 
-class InTechnology extends Component {
+class Technology2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -105,4 +105,4 @@ class InTechnology extends Component {
   }
 }
 
-export default InTechnology;
+export default Technology2;

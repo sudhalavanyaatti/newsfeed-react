@@ -30,7 +30,7 @@ class Header2 extends Component {
                   
                   <Row>
                   <Col xs={4} className="col">
-                  <Menu.Item  as={Link} to="/" id='dtext' style={{fontSize:'18px',color: 'smoky white'}}>
+                  <Menu.Item  as={Link} to="/" id='dtext' style={{fontSize:'18px',color: 'black'}}>
                     Home
                   </Menu.Item>
                   </Col>
@@ -41,7 +41,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="Business"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
@@ -62,7 +62,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="Sports"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
@@ -83,7 +83,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="entertainment"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
@@ -104,7 +104,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="Science"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
@@ -124,7 +124,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="Technology"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
@@ -145,7 +145,7 @@ class Header2 extends Component {
                     item
                     simple
                     text="Health"
-                    style={{color: 'smoky white'}}
+                    style={{color: 'black'}}
                     id='dtext'
                   >
                     <Dropdown.Menu >
