@@ -54,3 +54,11 @@
 #dtext2 {
   font-size:14px;
 }
+
+.form-control {
+  width: 20%!important;
+  
+}
+#display{
+  display:inline;
+}

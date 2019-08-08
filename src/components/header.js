@@ -10,7 +10,18 @@ class Header2 extends Component {
       <div>
         <div />
         <div>
+        
           <Menu id="headbg"  inverted style={{ height: "70px" }}>
+          <Row>
+        <Col xs={12} className="col">
+                    <Menu.Item
+                      id="dtext"
+                      style={{ fontSize: "18px", color: "green" }}
+                    >
+                      LIV NEWS
+                    </Menu.Item>
+                  </Col>
+        </Row>
             <Container>
               <div
                 style={{
@@ -21,7 +32,8 @@ class Header2 extends Component {
                   fontSize: "18px"
                 }}
               >
-                <Row>
+                <Row >
+                  
                   <Col xs={4} className="col">
                     <Menu.Item
                       as={Link}
@@ -144,6 +156,16 @@ class Header2 extends Component {
                         </Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
+                  </Col>
+                  <Col xs={4} className="col">
+                    <Menu.Item
+                      as={Link}
+                      to="/search"
+                      id="dtext"
+                      style={{ fontSize: "18px", color: "smoky white" }}
+                    >
+                      Search
+                    </Menu.Item>
                   </Col>
                 </Row>
               </div>
