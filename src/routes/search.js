@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Button, Label, Input } from 'reactstrap';
+import { Button, Input } from 'reactstrap';
 import Header from '../components/header';
 import Cards from '../components/cards';
 import {

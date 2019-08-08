@@ -1,11 +1,7 @@
 
 import React, {Component} from 'react';
 import Header from '../components/header';
-import Cards from '../components/cards';
-import {
-  Row,
-  Col
-} from "reactstrap";
+import PagiNation from '../components/Pagination';
 import "../App.css";
 import { Container } from 'semantic-ui-react';
 
@@ -40,24 +36,14 @@ class InBusiness extends Component {
       });
   }
   render() {
-    let Cardssm=this.state.list.map((item,index)=>{
-     return(
-       
-       <Col xs="6" md="6" sm="6">
-       <Cards item={item} />
-       </Col>
-     )
-
-    });
-      
+    
     return(
        <div className="homebg">
-         <Header/>
-         <Container fluid>
-        <Row  className="ContentItem">
-          {Cardssm}
-        </Row>
-      </Container>
+       <Header/>
+       <Container fluid>
+       <PagiNation details={this.state.list}/>
+       </Container>
+     
        </div>
       
     )

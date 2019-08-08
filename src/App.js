@@ -30,6 +30,7 @@ class App extends Component {
         <Route path="/health" component={Health} />
         <Route path="/technology" component={Technology} />
         <Route path="/search" component={Search}/>
+       
 
         <Route path="/in-technology" component={InTechnology} />
         <Route path="/in-business" component={InBusiness} />

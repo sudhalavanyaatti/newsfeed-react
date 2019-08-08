@@ -11,3 +11,14 @@ border: 10in;
 
   font-size: 0 !important;
 }
+
+.ContentItem {
+  margin-top: 20px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  height: 290px;
+  width:"100%";
+}

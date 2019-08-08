@@ -4,6 +4,7 @@ import "../styles.css";
 import { Container, Dropdown, Menu } from "semantic-ui-react";
 import { Row, Col } from "react-flexbox-grid";
 
+
 class Header2 extends Component {
   render() {
     return (
