@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Pagination from "react-js-pagination";
-import{
+import {
   Row,
   Col,
   Card,
@@ -35,46 +35,49 @@ class PagiNation extends Component {
 
     const renderPage = list.map((item, index) => {
       return (
-
-            <Col xs={6} md={6} sm={6}>
-                  <Card className="ContentItem">
-                     <Row>
-                     <Col md="4">
-                        <CardImg
-                          top
-                          width="100%"
-                          height="250px"
-                          src={item.urlToImage}
-                          alt="Card image cap"
-                        />
-                       </Col>
-                        <Col md="8">
-                        <CardBody>
-                          <CardText>
-                            <small align="left">{item.publishedAt}</small>
-                          </CardText>
-                          <CardTitle id="dtext1"><strong>{item.title}</strong></CardTitle>
-                          <CardText  id="dtext2">{item.description}</CardText>
-                          <CardText align="right">__{item.author}</CardText>
-                          <CardLink href={item.url}>MOre</CardLink>
-                        </CardBody>
-                       </Col>
-                       </Row>
-                    </Card>
-            </Col>
-          
-      
+        <Col xs={6} md={6} sm={6}>
+          <Card className="ContentItem">
+            <Row className="ContentItem">
+              <Col md="4">
+                <CardImg
+                  top
+                  width="100%"
+                  height="270px"
+                  src={item.urlToImage}
+                  alt="Card image cap"
+                />
+              </Col>
+              <Col md="8">
+                <CardBody>
+                  <CardText>
+                    <small align="left">{item.publishedAt}</small>
+                  </CardText>
+                  <CardTitle id="dtext1">
+                    <strong>{item.title}</strong>
+                  </CardTitle>
+                  <CardText id="dtext2">{item.description}</CardText>
+                  <CardText align="right">__{item.author}</CardText>
+                  <CardLink href={item.url} target="_blank">MOre</CardLink>
+                </CardBody>
+              </Col>
+            </Row>
+          </Card>
+        </Col>
       );
     });
 
     return (
       <div>
-        <Row className="ContentItem">
-          {renderPage}{" "}
-        </Row>
+        <Row className="ContentItem">{renderPage} </Row>
 
         <Pagination
-          hideNavigation
+          itemClass="page-item"
+          linkClass="page-link"
+          prevPageText='prev'
+      nextPageText='next'
+      firstPageText='first'
+      lastPageText='last'
+    
           activePage={this.state.activePage}
           itemsCountPerPage={this.state.noOfDetailsPerPage}
           totalItemsCount={this.props.details.length}
