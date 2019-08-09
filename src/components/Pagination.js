@@ -46,7 +46,7 @@ class PagiNation extends Component {
                 <CardImg
                   top
                   width="100%"
-                  height="250px"
+                  height="92%"
                   src={item.urlToImage}
                   alt="Card image cap"
                 />
@@ -78,9 +78,9 @@ class PagiNation extends Component {
           itemClass="page-item"
           linkClass="page-link"
           prevPageText='prev'
-      nextPageText='next'
-      firstPageText='first'
-      lastPageText='last'
+          nextPageText='next'
+          firstPageText='first'
+          lastPageText='last'
     
           activePage={this.state.activePage}
           itemsCountPerPage={this.state.noOfDetailsPerPage}

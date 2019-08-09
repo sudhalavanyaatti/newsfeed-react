@@ -10,6 +10,8 @@ import{
   CardLink
 } from "reactstrap";
 import "../App.css";
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 
 
@@ -32,7 +34,7 @@ class Cards extends Component {
                         <Col md="8">
                         <CardBody>
                           <CardText>
-                            <small align="left">{this.props.item.publishedAt}</small>
+                            <small align="left"><Moment fromNow>{this.props.item.publishedAt}</Moment></small>
                           </CardText>
                           <CardTitle id="dtext1"><strong>{this.props.item.title}</strong></CardTitle>
                           <CardText  id="dtext2">{this.props.item.description}</CardText>

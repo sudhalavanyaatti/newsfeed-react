@@ -8,6 +8,7 @@ import {
   Col
 } from "reactstrap";
 import { Container } from 'semantic-ui-react';
+import PagiNation from '../components/Pagination';
 
 export default class Search extends React.Component {
     constructor(props) {
@@ -56,15 +57,6 @@ export default class Search extends React.Component {
       }
 
   render() {
-    let Cardssm=this.state.list.map((item,index)=>{
-        return(
-          
-          <Col xs="6" md="6" sm="6">
-          <Cards item={item} />
-          </Col>
-        )
-   
-       });
 
     return (
         
@@ -78,11 +70,9 @@ export default class Search extends React.Component {
      
       
        <div>
-           {this.state.total>0?(<Container fluid>
-        <Row  className="ContentItem">
-          {Cardssm}
-        </Row>
-      </Container>):(<div> 
+           {this.state.total>0?( <Container fluid>
+       <PagiNation details={this.state.list}/>
+       </Container>):(<div> 
                           {this.state.change==="true"?(<div class="d-flex justify-content-center">
   <div class="spinner-border" role="status">
     <span class="sr-only">Loading...</span>
