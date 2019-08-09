@@ -33,3 +33,32 @@ border: 10in;
   margin-inline-start: 40%!important;
 }
 
+.btmnavbar {
+  background-color:white;
+  position:relative;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.footer {
+  text-align: left;
+  position: absolute;
+  color: rgb(32, 29, 29);
+  overflow: hidden;
+  left: 10px;
+  top: 10px;
+}
+
+#hdr {
+  top: 5px;
+  right: 10px;
+  position: absolute;
+  overflow: hidden;
+}
+
+g.social-svg-mask {
+  fill: black !important;
+}
