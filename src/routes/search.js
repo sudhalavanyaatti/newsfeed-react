@@ -14,20 +14,25 @@ export default class Search extends React.Component {
         super(props);
         this.state = {
           searchValue: '',
-          display:'',
+          total:'',
+          change:'',
           list:[]
         };
       }
       handleChange(event) {
         this.setState({
-          searchValue: event.target.value
+          searchValue: event.target.value,
+         
         });
       }
 
 
       async handleSubmit(data) {
         //  event.preventDefault();
-    
+        this.setState({
+          change:"true"
+         
+        });
         data = {
          searchValue:this.state.searchValue
         };
@@ -44,7 +49,7 @@ export default class Search extends React.Component {
         .then (response => {
          console.log(response);
          if (response) {
-          this.setState({list:response.response.articles,display:"yes"});
+          this.setState({list:response.response.articles,total:response.response.totalResults});
         }
         
         });
@@ -73,11 +78,18 @@ export default class Search extends React.Component {
      
       
        <div>
-           {this.state.display==="yes"?(<Container fluid>
+           {this.state.total>0?(<Container fluid>
         <Row  className="ContentItem">
           {Cardssm}
         </Row>
-      </Container>):(null)}
+      </Container>):(<div> 
+                          {this.state.change==="true"?(<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>):(null) }
+                    </div>
+                      )}
        </div>
      </div>
      

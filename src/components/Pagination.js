@@ -11,6 +11,8 @@ import {
   CardLink
 } from "reactstrap";
 import "../styles.css";
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 class PagiNation extends Component {
   constructor(props) {
@@ -34,6 +36,8 @@ class PagiNation extends Component {
     console.log("length", this.props.details.length);
 
     const renderPage = list.map((item, index) => {
+      const date = new Date(Date(item.publishedAt));
+      console.log(date);
       return (
         <Col xs={6} md={6} sm={6}>
           <Card className="ContentItem">
@@ -42,7 +46,7 @@ class PagiNation extends Component {
                 <CardImg
                   top
                   width="100%"
-                  height="270px"
+                  height="250px"
                   src={item.urlToImage}
                   alt="Card image cap"
                 />
@@ -50,7 +54,7 @@ class PagiNation extends Component {
               <Col md="8">
                 <CardBody>
                   <CardText>
-                    <small align="left">{item.publishedAt}</small>
+                    <small align="left"><Moment fromNow>{item.publishedAt}</Moment></small>
                   </CardText>
                   <CardTitle id="dtext1">
                     <strong>{item.title}</strong>
