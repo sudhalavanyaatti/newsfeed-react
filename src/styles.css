@@ -62,3 +62,18 @@ g.social-svg-mask {
   padding: 1.25rem;
   min-height: 280px!important;
 }
+input[type=email], input[type=password], input[type=search], input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 200px!important;
+}
+
+.btn {
+  color: whitesmoke!important;
+  background-color: black!important;
+  border-color: black!important;
+  align-items: center!important;
+  padding: 0.8em!important;
+  font-weight: 600!important;
+  font-size: 1em!important;
+}

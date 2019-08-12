@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../styles.css";
 import { Container, Dropdown, Menu } from "semantic-ui-react";
 import { Row, Col } from "react-flexbox-grid";
+import Modal from "../components/modal2";
+
 
 
 class Header2 extends Component {
@@ -159,14 +161,8 @@ class Header2 extends Component {
                     </Dropdown>
                   </Col>
                   <Col xs={4} className="col">
-                    <Menu.Item
-                      as={Link}
-                      to="/search"
-                      id="dtext"
-                      style={{ fontSize: "18px", color: "smoky white" }}
-                    >
-                      Search
-                    </Menu.Item>
+                    <Modal/>
+                    
                   </Col>
                 </Row>
               </div>
