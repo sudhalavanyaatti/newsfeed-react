@@ -16,6 +16,14 @@ border: 10in;
   margin-top: 20px;
 }
 
+.ContentItem2 {
+  /* margin-bottom: 15px!important; */
+ margin-top:20px!important;
+  height: 270px!important;
+  margin-left:20px;
+  margin-right:20px;
+}
+
 
 .pagination {
   display: flex;

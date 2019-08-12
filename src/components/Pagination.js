@@ -85,13 +85,12 @@ handleGrid(){
       console.log(date);
       return (
         // <Col xs={6} md={6} sm={6}>
-          <Card className="ContentItem">
-            <Row className="ContentItem">
+          <Card className="ContentItem2">
+            <Row className="ContentItem2">
               <Col md="4">
                 <CardImg
-                  top
                   width="100%"
-                  height="92%"
+                 height="230px"
                   src={item.urlToImage}
                   alt="Card image cap"
                 />
@@ -121,7 +120,6 @@ handleGrid(){
 
     return (
       <div>
-          <br/>
          <div align="right">
     <Button attached="left" icon="list layout"  onClick={() => this.handleList()}></Button>
     <Button attached="right" icon="grid layout" onClick={() => this.handleGrid()}></Button>
