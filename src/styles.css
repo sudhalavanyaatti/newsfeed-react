@@ -89,3 +89,25 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
   font-weight: 600!important;
   font-size: 1em!important;
 }
+
+/*sidebar*/
+
+.ui.visible.left.overlay.sidebar {
+  transform: translate3d(0,0,0);
+  max-height: 700px!important;
+}
+
+.ui.vertical.menu .dropdown.item:not(.upward) .menu {
+  top: 0;
+  left: 111px;
+  background-color: black;
+  
+}
+.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+  display: block;
+  color: whitesmoke!important;
+}
+.col{
+  align-self:center;
+
+}

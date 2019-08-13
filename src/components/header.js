@@ -4,8 +4,7 @@ import "../styles.css";
 import { Container, Dropdown, Menu } from "semantic-ui-react";
 import { Row, Col } from "react-flexbox-grid";
 import Modal from "../components/modal2";
-
-
+import Sidebar from "./sidebar";
 
 class Header extends Component {
   render() {
@@ -13,18 +12,23 @@ class Header extends Component {
       <div>
         <div />
         <div>
-        
-          <Menu id="headbg"  inverted style={{ height: "70px" }}>
-          <Row>
-        <Col xs={12} className="col">
-                    <Menu.Item
-                      id="dtext"
-                      style={{ fontSize: "18px", color: "green" }}
-                    >
-                      LIV NEWS
-                    </Menu.Item>
-                  </Col>
-        </Row>
+          <Menu id="headbg" inverted style={{ height: "70px" }}>
+            <Row>
+              <Col  className="col">
+                <Menu.Item
+                  id="dtext"
+                  style={{ fontSize: "18px", color: "green" }}
+                >
+                  LIV NEWS
+                </Menu.Item>
+              </Col>
+            </Row>
+            <Row>
+            <Col xs={17} className="col"> 
+              <Sidebar/>
+            </Col>
+            </Row>
+            
             <Container>
               <div
                 style={{
@@ -35,8 +39,8 @@ class Header extends Component {
                   fontSize: "18px"
                 }}
               >
-                <Row >
-                  
+                <Row>
+               
                   <Col xs={4} className="col">
                     <Menu.Item
                       as={Link}
@@ -161,8 +165,7 @@ class Header extends Component {
                     </Dropdown>
                   </Col>
                   <Col xs={4} className="col">
-                    <Modal/>
-                    
+                    <Modal />
                   </Col>
                 </Row>
               </div>

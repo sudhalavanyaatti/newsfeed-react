@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles.css";
 import { Container, Dropdown, Menu } from "semantic-ui-react";
 import { Row, Col } from "react-flexbox-grid";
-
+import Sidebar from "./sidebar";
 
 
 
@@ -24,6 +24,11 @@ class Header2 extends Component {
                       LIV NEWS
                     </Menu.Item>
                   </Col>
+                  <Row>
+            <Col xs={17} className="col"> 
+              <Sidebar/>
+            </Col>
+            </Row>
         </Row>
             <Container>
               <div
