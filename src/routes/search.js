@@ -84,7 +84,7 @@ class Search extends React.Component {
      <div className="homebg">
            <Header/>
           
-         <div align="center" className="ContentItem" >
+         <div align="center" >
          <h2>Search News</h2>
           <Input action={<Button onClick={() => this.handleSubmit()}> search </Button> } placeholder='Search...' value={this.state.searchValue} onChange={event => this.handleChange(event)} />
          </div>

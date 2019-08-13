@@ -10,7 +10,7 @@ import {
   CardImg,
   CardLink
 } from "reactstrap";
-import { Button } from 'semantic-ui-react'
+import { Button} from 'semantic-ui-react'
 import "../styles.css";
 import Moment from 'react-moment';
 import 'moment-timezone';
@@ -49,19 +49,14 @@ handleGrid(){
       const date = new Date(Date(item.publishedAt));
       console.log(date);
       return (
-        <Col xs={6} md={6} sm={6}>
-          <Card className="ContentItem">
-            <Row className="ContentItem">
-              <Col md="4">
-                <CardImg
-                  top
+        <Col xs={4} md={4} sm={4} >
+         
+          <Card className="card-size1">      
+                <CardImg className="card-img1"
                   width="100%"
-                  height="92%"
                   src={item.urlToImage}
                   alt="Card image cap"
                 />
-              </Col>
-              <Col md="8">
                 <CardBody>
                   <CardText>
                     <small align="left"><Moment fromNow>{item.publishedAt}</Moment></small>
@@ -73,9 +68,10 @@ handleGrid(){
                   <CardText align="right">__{item.author}</CardText>
                   <CardLink href={item.url} target="_blank">MOre</CardLink>
                 </CardBody>
-              </Col>
-            </Row>
+            
+          
           </Card>
+          
         </Col>
       );
     });
@@ -85,12 +81,11 @@ handleGrid(){
       console.log(date);
       return (
         // <Col xs={6} md={6} sm={6}>
-          <Card className="ContentItem2">
-            <Row className="ContentItem2">
+          <Card className="card-size2">
+            <Row >
               <Col md="4">
-                <CardImg
+                <CardImg className="card-img2"
                   width="100%"
-                 height="230px"
                   src={item.urlToImage}
                   alt="Card image cap"
                 />
@@ -124,7 +119,7 @@ handleGrid(){
     <Button attached="left" icon="list layout"  onClick={() => this.handleList()}></Button>
     <Button attached="right" icon="grid layout" onClick={() => this.handleGrid()}></Button>
     </div>
-  {this.state.listView==="true"?(<div className="ContentItem">{renderPage2} </div> ):(<Row className="ContentItem">{renderPage} </Row>)}
+  {this.state.listView==="true"?(<div >{renderPage2} </div> ):(<Row >{renderPage} </Row>)}
         
         <Pagination
           itemClass="page-item"

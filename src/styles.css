@@ -11,17 +11,25 @@ border: 10in;
 
   font-size: 0 !important;
 }
-
-.ContentItem {
-  margin-top: 20px;
+.card-size1{
+  min-height:650px;
+  margin-top:20px;
+}
+.card-img1 {
+  
+  max-height: 350px!important;
+  min-height: 350px!important;
 }
 
-.ContentItem2 {
-  /* margin-bottom: 15px!important; */
- margin-top:20px!important;
-  height: 270px!important;
-  margin-left:20px;
-  margin-right:20px;
+
+
+.card-size2{
+  margin-top:20px;
+}
+.card-img2 {
+  
+  max-height: 250px!important;
+  min-height: 250px!important;
 }
 
 
@@ -65,11 +73,7 @@ g.social-svg-mask {
   fill: black !important;
 }
 
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-  min-height: 280px!important;
-}
+
 input[type=email], input[type=password], input[type=search], input[type=text] {
   -webkit-appearance: none;
   -moz-appearance: none;
