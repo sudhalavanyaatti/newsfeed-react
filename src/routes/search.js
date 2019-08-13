@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from '../components/header2';
-import { Container,Input,Button} from 'semantic-ui-react';
+import { Container,Input,Button,Loader} from 'semantic-ui-react';
 import PagiNation from '../components/Pagination';
 
 
@@ -93,16 +93,14 @@ class Search extends React.Component {
        <div>
          <br/><br/><br/><br/>
          <h3>Search Results</h3>
-           {this.state.total>0?( <Container fluid>
-       <PagiNation details={this.state.list}/>
-       </Container>):(<div> 
-                          {this.state.change==="true"?(<div class="d-flex justify-content-center">
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-</div>):(null) }
-                    </div>
-                      )}
+           {this.state.total>0? ( <Container fluid>
+                                    <PagiNation details={this.state.list}/>
+                                  </Container>
+                                ):(<div> 
+                                     {this.state.change==="true"?  (<div align="center"> <Loader active inline> Oops!,No Result Found</Loader></div>
+                                                                  
+                                                                  ):(null) }
+                                   </div>)}
        </div>
      </div>
      
