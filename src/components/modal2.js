@@ -44,7 +44,7 @@ class ModalComponent extends React.Component {
           <ModalBody>
           <div className="row">
             <div className="form-group col-md-4">
-            <label>searchValue:</label>
+            <label>search Phrase:</label>
             <input type="text" value={this.state.searchValue} onChange={this.handleChangeValue} className="form-control" />
               </div>
               </div>

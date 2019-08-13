@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Header from '../components/header';
+import Header from '../components/header2';
 import { Container,Input,Button} from 'semantic-ui-react';
 import PagiNation from '../components/Pagination';
 

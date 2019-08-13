@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "../styles.css";
 import { Container, Dropdown, Menu } from "semantic-ui-react";
 import { Row, Col } from "react-flexbox-grid";
-import Modal from "../components/modal2";
 
 
 
-class Header extends Component {
+
+class Header2 extends Component {
   render() {
     return (
       <div>
@@ -160,10 +160,6 @@ class Header extends Component {
                       </Dropdown.Menu>
                     </Dropdown>
                   </Col>
-                  <Col xs={4} className="col">
-                    <Modal/>
-                    
-                  </Col>
                 </Row>
               </div>
             </Container>
@@ -174,4 +170,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Header2;
