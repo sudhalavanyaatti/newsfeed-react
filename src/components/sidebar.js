@@ -25,91 +25,93 @@ export default class SidebarExampleSidebar extends Component {
           vertical
           visible={visible}
           width="large"
+        id="sidebar"
         >
           <Menu.Item
             as={Link}
             to="/"
             id="dtext"
             style={{ fontSize: "18px", color: "smoky white" }}
+            
           >
             Home
           </Menu.Item>
 
           {/* <Menu.Item> */}
-            <Dropdown item text="Business">
-              <Dropdown.Menu content="right">
-                <Dropdown.Item as={Link} to="/in-business">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/business">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Business">
+            <Dropdown.Menu content="right">
+              <Dropdown.Item as={Link} to="/in-business" >
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/business">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item> */}
 
           {/* <Menu.Item> */}
-            <Dropdown item text="Sports">
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/in-sports">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/sports">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Sports">
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} to="/in-sports">
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/sports">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item> */}
           {/* <Menu.Item> */}
-            <Dropdown item text="Entertainment">
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/in-entertainment">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/entertainment">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Entertainment">
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} to="/in-entertainment">
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/entertainment">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item> */}
           {/* <Menu.Item> */}
-            <Dropdown item text="Science">
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/in-science">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/science">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Science">
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} to="/in-science">
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/science">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item>
           <Menu.Item> */}
-            <Dropdown item text="Technology">
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/in-technology">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/technology">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Technology">
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} to="/in-technology">
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/technology">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item>
           <Menu.Item> */}
-            <Dropdown item text="Health">
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/in-health">
-                  International
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/health">
-                  National
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown item text="Health">
+            <Dropdown.Menu>
+              <Dropdown.Item as={Link} to="/in-health">
+                International
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/health">
+                National
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           {/* </Menu.Item>
           <Menu.Item> */}
-            <Modal />
+          <Modal />
           {/* </Menu.Item> */}
         </Sidebar>
       </div>

@@ -122,8 +122,7 @@ class Search extends Component {
         <div>
           <br />
           <br />
-          <br />
-          <br />
+         
           <h3>Search Results</h3>
 
           {this.state.total > 1 ? (
@@ -167,11 +166,7 @@ class Search extends Component {
                 );
               })}{" "}
             </div>
-          ) : (<div align="center">
-          <Loader active inline>
-           
-          </Loader>
-        </div>)}
+          ) : (null)}
 
           {this.state.total === 0 ? (
             <h4 align="center">
