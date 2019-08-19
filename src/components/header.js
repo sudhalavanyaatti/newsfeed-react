@@ -14,7 +14,7 @@ class Header extends Component {
         <div>
           <Menu id="headbg" inverted style={{ height: "70px" }}>
             <Row>
-              <Col  className="col">
+              <Col className="col">
                 <Menu.Item
                   id="dtext"
                   style={{ fontSize: "18px", color: "green" }}
@@ -24,11 +24,11 @@ class Header extends Component {
               </Col>
             </Row>
             <Row>
-            <Col xs={17} className="col"> 
-              <Sidebar/>
-            </Col>
+              <Col className="col">
+                <Sidebar />
+              </Col>
             </Row>
-            
+
             <Container>
               <div
                 style={{
@@ -40,7 +40,6 @@ class Header extends Component {
                 }}
               >
                 <Row>
-               
                   <Col xs={4} className="col">
                     <Menu.Item
                       as={Link}

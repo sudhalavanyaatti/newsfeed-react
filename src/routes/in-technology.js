@@ -3,6 +3,7 @@ import Header from '../components/header';
 import PagiNation from '../components/Pagination';
 import "../App.css";
 import { Container } from 'semantic-ui-react';
+import Bottom from '../components/bottom';
 
 
 class InTechnology extends Component {
@@ -42,7 +43,7 @@ class InTechnology extends Component {
        <Container fluid>
        <PagiNation details={this.state.list}/>
        </Container>
-     
+       <Bottom/>
        </div>
       
     )

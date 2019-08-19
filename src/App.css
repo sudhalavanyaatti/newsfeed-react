@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
 .App-link {
@@ -32,31 +32,31 @@
   }
 }
 
-
-
-.header{
-  height:"200%";
-  
+.header {
+  height: "200%";
 }
-.homebg{
-  background-color:whitesmoke;
- }
- #dtext1 {
-  font-size:18px;
+.homebg {
+  background-color: whitesmoke;
+  min-height: 940px;
+}
+#dtext1 {
+  font-size: 18px;
 }
 #dtext2 {
-  font-size:14px;
+  font-size: 14px;
 }
 
 .form-control {
-  width: 20%!important;
-  
+  width: 20% !important;
 }
-#display{
-  display:inline;
+#display {
+  display: inline;
 }
 
-.ui.action.input:not([class*="left action"])>input {
-  
-  width: 400px!important;
+.ui.action.input:not([class*="left action"]) > input {
+  width: 400px !important;
+}
+
+.ui.input > input {
+  width: 480px !important;
 }
