@@ -38,7 +38,7 @@ class News extends Component {
       <div className="homebg">
    
         <Container fluid>
-            <h2>{this.props.news.name} </h2>
+            <h1>{this.props.news.name} </h1>
           <PagiNation details={this.state.list} />
         </Container>
 
