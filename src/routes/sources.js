@@ -46,9 +46,8 @@ constructor (props) {
         <Row>
          
             <Col lg={2} xs={12} sm={6} md={6}>
-            <div align="center">
-              <h4>News Sources:</h4><br/>
-             
+            <h4 align="center">News Sources:</h4><br/>
+            <div align="center" className="scroller">   
             <Button.Group vertical>
               {this.state.sources.map((item,index)=>{
                
