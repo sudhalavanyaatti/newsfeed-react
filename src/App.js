@@ -7,8 +7,9 @@ import Entertainment from "./routes/entertainment";
 import Science from "./routes/science";
 import Health from "./routes/health";
 import Technology from "./routes/technology";
-import Find from "./routes/find";
+import News from "./routes/news";
 import Search from "./routes/search";
+import Sources from "./routes/sources";
 
 import InBusiness from "./routes/in-business";
 import InSports from "./routes/in-sports";
@@ -31,7 +32,8 @@ class App extends Component {
         <Route path="/health" component={Health} />
         <Route path="/technology" component={Technology} />
         <Route path="/search" component={Search} />
-        <Route path="/find" component={Find} />
+        <Route path="/news" component={News} />
+        <Route path="/sources" component={Sources}/>
 
         <Route path="/in-technology" component={InTechnology} />
         <Route path="/in-business" component={InBusiness} />

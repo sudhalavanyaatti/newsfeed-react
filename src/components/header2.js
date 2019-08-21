@@ -8,6 +8,19 @@ import Sidebar from "./sidebar";
 
 
 class Header2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: [
+        "business",
+        "sports",
+        "entertainment",
+        "science",
+        "technology",
+        "health"
+      ]
+    };
+  }
   render() {
     return (
       <div>
@@ -52,119 +65,32 @@ class Header2 extends Component {
                       Home
                     </Menu.Item>
                   </Col>
-
-                  <Col xs={4} className="col" align="center">
-                    <Dropdown
-                      item
-                      simple
-                      text="Business"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-business">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/business">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
-
-                  <Col xs={4} className="col">
-                    <Dropdown
-                      item
-                      simple
-                      text="Sports"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-sports">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/sports">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
-
-                  <Col xs={4} className="col">
-                    <Dropdown
-                      item
-                      simple
-                      text="Entertainment"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-entertainment">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/entertainment">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
-
-                  <Col xs={4} className="col">
-                    <Dropdown
-                      item
-                      simple
-                      text="Science"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-science">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/science">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
-                  <Col xs={4} className="col">
-                    <Dropdown
-                      item
-                      simple
-                      text="Technology"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-technology">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/technology">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
-
-                  <Col xs={4} className="col">
-                    <Dropdown
-                      item
-                      simple
-                      text="Health"
-                      style={{ color: "smoky white" }}
-                      id="dtext"
-                    >
-                      <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/in-health">
-                          International
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/health">
-                          National
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Col>
+                  {this.state.list.map(item => {
+                    console.log("item", { item });
+                    const member = "in-" + { item };
+                    console.log("ghghghgh", member);
+                    return (
+                      <Col xs={4} className="col" align="center">
+                        <Dropdown
+                          item
+                          simple
+                          text={item}
+                          style={{ color: "smoky white" }}
+                          id="dtext"
+                        >
+                          <Dropdown.Menu>
+                            <Dropdown.Item as={Link} to={`/in-${item}`}>
+                              International
+                            </Dropdown.Item>
+                            <Dropdown.Item as={Link} to={`/${item}`}>
+                              National
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </Col>
+                    );
+                  })}
+                 
                 </Row>
               </div>
             </Container>

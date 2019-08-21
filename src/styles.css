@@ -5,6 +5,7 @@
 
 #dtext {
   font-weight: bold;
+  text-transform: capitalize;
 }
 .ui.dropdown > .dropdown.icon {
   position: relative;
@@ -111,3 +112,4 @@ input[type="text"] {
 .ui.sidebar {
   overflow: visible !important;
 }
+

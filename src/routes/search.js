@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SearchBar from "react-search-bar-semantic-ui";
-import { Container, Loader } from "semantic-ui-react";
+import { Container} from "semantic-ui-react";
 import PagiNation from "../components/Pagination";
 import Header from "../components/header2";
 import {
@@ -106,10 +106,12 @@ class Search extends Component {
   render() {
     return (
       <div className="homebg">
+        
         <Header />
         <div align="center">
           <br/>
           <h2>Search News</h2>  
+      
           {this.state.plist.length !== 0 ? (
             <SearchBar
               data={this.state.plist}

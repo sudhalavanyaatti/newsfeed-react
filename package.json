@@ -13,6 +13,7 @@
     "moment-timezone": "^0.5.26",
     "react": "^16.8.6",
     "react-bootstrap-dropdown-menu": "^1.1.15",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.8.6",
     "react-flexbox-grid": "^2.1.2",
     "react-fontawesome": "^1.6.1",
