@@ -3,7 +3,7 @@ import "../App.css";
 
 import { Container } from "semantic-ui-react";
 import PagiNation from "../components/Pagination";
-import Bottom from "../components/bottom";
+
 import "../styles.css";
 
 class News extends Component {
@@ -41,7 +41,7 @@ class News extends Component {
             <h2>{this.props.news.name} </h2>
           <PagiNation details={this.state.list} />
         </Container>
-        <Bottom />
+
       </div>
     );
   }
